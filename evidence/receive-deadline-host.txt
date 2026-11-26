@@ -1,0 +1,22 @@
+Menu timeout passed the 8 and 12 second boundaries, page-turn extension and pause exemption.
+Playback controls passed pause, resume and setup tap regions and labels.
+Native channel menu passed tap regions, empty and partial pages, Chinese labels and untouched video.
+Volume and brightness touch controls, 10% bounds, relay acknowledgements and stale revision checks passed.
+Status bar passed RSSI thresholds, displayed-FPS and ingress sampling, counter wrap, reset, USB power label and band boundaries.
+Detailed status rendered separate RSSI, IP, video and audio fields, preserved the video band, and expired stale speaker sync.
+Quality cards, saved profile decoding, exact session geometry, FPS limits and legacy CONFIG passed.
+Channel recovery kept a proven channel and reset offline failures; unproven channels advanced after three automatic or five deliberate attempts.
+Playback gestures passed: directional wrap, tap, interrupted and diagonal contact, modal isolation, and list-page retention.
+Confirmed channel caption starts with video, expires at five seconds, ignores same-station reconnect and changes only its lower video band.
+Volume notice shows text and the correct zero, partial and full bar, expires at 1.5 seconds, and leaves adjacent bands intact.
+Scan results retained the strongest SSID, 32-byte names and quoted UTF-8, skipping empty and invalid names.
+Setup edits kept matched credentials, rejected stale identities, accepted explicit clearing and excluded secrets from saved metadata.
+Receive deadlines follow CONFIG, first valid media, and active playback independently of the palette.
+Session setup refreshed each managed connection, replaced the endpoint and ticket together, and waited for durable enrollment.
+Both relay owners invalidate the old socket when Wi-Fi disconnects and rejoins between polls.
+Shared relay timing passed video-only pacing, lost first audio packet, invalid/reordered probes, bounded smoothing and receiver re-anchor.
+Waiting and reconnect views passed tuning bars, failure notice, 4 fps snow pacing, stale-frame rejection, first-frame recovery and deliberate pause or retune.
+Native relay datagram validity and exact stereo PCM conversion passed.
+Audio playout passed reorder, loss, late drop, idle recovery, cancel, tail drain, and session turnover.
+USB setup passed split commands, invalid input, NVS round trip, atomic update failure and reboot order.
+USB host tool passed framing, bounds, acknowledgement and single-write failure handling.

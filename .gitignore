@@ -1,0 +1,16 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+.codecraft/
+managed_components/
+build/
+sdkconfig
+sdkconfig.old
+.env
+.env.*
+server.env
+channels.txt
+pairing.code
+pairing.token
+paired-devices.json

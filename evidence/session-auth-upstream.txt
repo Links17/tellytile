@@ -1,0 +1,5 @@
+Original service: enrollment and refresh passed, unrelated credential rejected.
+fixture / smooth: decoded 2 full frames and 19 audio blocks; channel names matched
+demo / standard: decoded 2 full frames and 17 audio blocks; channel names matched
+fixture / ultra: decoded 2 full frames and 16 audio blocks; channel names matched
+Original service restart with a new signing token rejected the stale media ticket. Refreshing with the retained binding opened a new A/V session.

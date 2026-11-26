@@ -1,0 +1,19 @@
+menu "Live TV audio receiver"
+config PASSPORT_TV_SSID
+    string "Wi-Fi SSID"
+    default ""
+config PASSPORT_TV_PASSWORD
+    string "Wi-Fi password"
+    default ""
+config PASSPORT_TV_AUDIO_SENDER
+    string "Indicator IPv4 address"
+    default ""
+config PASSPORT_TV_AUDIO_PORT
+    int "UDP audio listen port"
+    default 18096
+    range 1 65535
+config PASSPORT_TV_VOLUME
+    int "Initial output volume percent"
+    range 0 100
+    default 35
+endmenu

@@ -1,0 +1,2 @@
+Original service: enrollment and refresh passed, unrelated credential rejected.
+Pinned service Standard stream carried five usable flash and tone markers. Wire A/V offsets (ms): [0.0, 0.0, 0.0, 0.0, 0.0].

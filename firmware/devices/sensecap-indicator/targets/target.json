@@ -1,0 +1,317 @@
+{
+  "default_variant": "gx",
+  "dependencies": [],
+  "device": "sensecap-indicator",
+  "example_dependencies": {
+    "button_backlight": [
+      "devices/sensecap-indicator/targets/examples/button_backlight/dependencies.lock",
+      "devices/sensecap-indicator/targets/examples/button_backlight/main/idf_component.yml"
+    ]
+  },
+  "example_inputs": {
+    "button_backlight": [
+      "devices/sensecap-indicator/targets/bsp/include/bsp_button.h",
+      "devices/sensecap-indicator/targets/bsp/include/bsp_display.h",
+      "devices/sensecap-indicator/targets/bsp/include/bsp_io_expander.h",
+      "devices/sensecap-indicator/targets/bsp/include/bsp_touch.h",
+      "devices/sensecap-indicator/targets/bsp/src/bsp_button.c",
+      "devices/sensecap-indicator/targets/bsp/src/bsp_display.c",
+      "devices/sensecap-indicator/targets/bsp/src/bsp_io_expander.c",
+      "devices/sensecap-indicator/targets/bsp/src/bsp_touch.c",
+      "devices/sensecap-indicator/targets/examples/button_backlight",
+      "devices/sensecap-indicator/targets/examples/button_backlight/main/ui/ui_font_cjk.bin"
+    ]
+  },
+  "examples": [
+    "button_backlight"
+  ],
+  "firmware": {
+    "formats": [
+      "bin"
+    ],
+    "purpose": "factory",
+    "security": "unsigned-unencrypted"
+  },
+  "id": "esp-idf/sensecap-indicator",
+  "inputs": [
+    "devices/sensecap-indicator/targets/bsp/CMakeLists.txt",
+    "devices/sensecap-indicator/targets/bsp/idf_component.yml",
+    "devices/sensecap-indicator/targets/bsp/include/bsp_pins.h",
+    "devices/sensecap-indicator/targets/variants.cmake",
+    "devices/sensecap-indicator/targets/README.md",
+    "devices/sensecap-indicator/targets/README.zh_CN.md"
+  ],
+  "interfaces": [
+    {
+      "configuration": {
+        "bits_per_pixel": {
+          "description": "Native framebuffer packing",
+          "maximum": 64,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "bit",
+          "value": null
+        },
+        "height": {
+          "description": "Logical height",
+          "maximum": 16384,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "px",
+          "value": null
+        },
+        "width": {
+          "description": "Logical width",
+          "maximum": 16384,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "px",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "button_backlight": [
+          "devices/sensecap-indicator/targets/bsp/include/bsp_display.h"
+        ]
+      },
+      "id": "display",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "present": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/sensecap-indicator/targets/bsp/include/bsp_display.h",
+          "supported": true,
+          "symbol": "bsp_display_init"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    },
+    {
+      "configuration": {
+        "line_count": {
+          "description": "Addressable native lines",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "count",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "button_backlight": [
+          "devices/sensecap-indicator/targets/bsp/include/bsp_io_expander.h"
+        ]
+      },
+      "id": "gpio",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "read": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/sensecap-indicator/targets/bsp/include/bsp_io_expander.h",
+          "supported": true,
+          "symbol": "bsp_io_expander_get_level"
+        },
+        "write": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/sensecap-indicator/targets/bsp/include/bsp_io_expander.h",
+          "supported": true,
+          "symbol": "bsp_io_expander_set_level"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    },
+    {
+      "configuration": {
+        "debounce_ms": {
+          "description": "Native debounce interval",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "ms",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "button_backlight": [
+          "devices/sensecap-indicator/targets/bsp/include/bsp_button.h"
+        ]
+      },
+      "id": "input",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "read": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/sensecap-indicator/targets/bsp/include/bsp_button.h",
+          "supported": true,
+          "symbol": "bsp_button_pressed"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    },
+    {
+      "configuration": {
+        "height": {
+          "description": "Touch coordinate height",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "px",
+          "value": null
+        },
+        "max_points": {
+          "description": "Maximum reported simultaneous touches",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "count",
+          "value": null
+        },
+        "width": {
+          "description": "Touch coordinate width",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "px",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "button_backlight": [
+          "devices/sensecap-indicator/targets/bsp/include/bsp_touch.h"
+        ]
+      },
+      "id": "touch",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "read": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/sensecap-indicator/targets/bsp/include/bsp_touch.h",
+          "supported": true,
+          "symbol": "bsp_touch_get_handle"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    }
+  ],
+  "path": "devices/sensecap-indicator/targets",
+  "platform": "esp-idf",
+  "schema_version": 3,
+  "selected_variant": "gx",
+  "toolchain": {
+    "name": "esp-idf",
+    "source": "devices/sensecap-indicator/targets/README.md",
+    "target": "esp32s3",
+    "version": "6.0.2"
+  },
+  "variants": {
+    "gx": {
+      "configuration": {
+        "profile": "devices/sensecap-indicator/targets/variants/gx.cmake"
+      },
+      "dependencies": [],
+      "device_variant": "gx",
+      "inputs": [
+        "devices/sensecap-indicator/targets/variants/gx.cmake"
+      ]
+    }
+  }
+}

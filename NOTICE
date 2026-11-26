@@ -1,0 +1,18 @@
+TellyTile
+
+TellyTile's original contributions are distributed under the MIT License in
+LICENSE. Bundled third-party components retain their own licenses and notices.
+
+The firmware and audio companion include portable CodeCraft AI Hardware
+exports. Their Apache-2.0 license and notices are retained in the respective
+LICENSE and NOTICE files. TellyTile modifies the Indicator display integration,
+RGB scanout settings, and application behavior, and adapts the reSpeaker audio
+example for use as a network audio companion.
+
+The bundled protocol sources, JSON parser and font retain their respective
+MIT or SIL OFL notices. UPSTREAM.md lists their sources. The binary releases
+include components from those source trees and ESP-IDF. The DX source archive
+includes the corresponding notices.
+
+The project cover is an illustration based on the form of Seeed Studio's
+SenseCAP Indicator. The screen shows an illustrated city scene.

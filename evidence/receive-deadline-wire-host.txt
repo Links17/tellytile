@@ -1,0 +1,10 @@
+Original service: enrollment and refresh passed, unrelated credential rejected.
+fixture / smooth: decoded 2 full frames and 19 audio blocks; channel names matched
+Native C wire check (smooth): 2 RGB565 frames and 19 PCM blocks matched reference checksums and timestamps.
+demo / standard: decoded 2 full frames and 17 audio blocks; channel names matched
+Native C wire check (standard): 2 RGB565 frames and 17 PCM blocks matched reference checksums and timestamps.
+fixture / ultra: decoded 2 full frames and 17 audio blocks; channel names matched
+Native C wire check (ultra): 2 RGB565 frames and 17 PCM blocks matched reference checksums and timestamps.
+Original service restart with a new signing token rejected the stale media ticket. Refreshing with the retained binding opened a new A/V session.
+Original FAV1 session 1758652361 recovered after 18 snow frames and silent audio blocks, then resumed colour and sound.
+Native C wire check (standard): 237 RGB565 frames and 503 PCM blocks matched reference checksums and timestamps.

@@ -1,0 +1,31 @@
+menu "Passport TV receiver"
+config PASSPORT_TV_SSID
+    string "Wi-Fi SSID"
+    default ""
+config PASSPORT_TV_PASSWORD
+    string "Wi-Fi password"
+    default ""
+config PASSPORT_TV_HOST
+    string "FAV1 service address"
+    default ""
+config PASSPORT_TV_PORT
+    int "FAV1 service port"
+    default 10745
+    range 1 65535
+config PASSPORT_TV_TOKEN
+    string "Standalone service token or existing media ticket"
+    default ""
+config PASSPORT_TV_PAIRING_ORIGIN
+    string "Original service pairing origin (optional HTTP or HTTPS)"
+    default ""
+config PASSPORT_TV_PAIRING_CODE
+    string "Pairing code for initial local enrollment (optional)"
+    default ""
+config PASSPORT_TV_AUDIO_PEER
+    string "Optional reSpeaker Lite IPv4 address"
+    default ""
+config PASSPORT_TV_AUDIO_PORT
+    int "reSpeaker Lite UDP port"
+    default 18096
+    range 1 65535
+endmenu

@@ -1,0 +1,19 @@
+FoloTV reSpeaker runtime USB setup checks
+The NVS failure and restart checks use stubs. The USB CLI also ran over a macOS virtual serial link.
+
+Video PTS clock passed audio anchoring, burst handling, late/early frame bounds and a new session.
+Native relay datagram validity and exact stereo PCM conversion passed.
+Audio playout passed reorder, loss, late drop, idle recovery, cancel, tail drain, and session turnover.
+USB setup passed split commands, invalid input, NVS round trip, atomic update failure and reboot order.
+USB host tool passed framing, bounds, acknowledgement and single-write failure handling.
+Virtual USB CLI passed: readiness handshake, Unicode SSID, custom port and save acknowledgement.
+
+Default ELF symbols with empty Wi-Fi settings:
+420100cc T audio_playout_receive
+42010260 T audio_playout_take
+420106d0 T av_adpcm_decode
+420110f0 T bsp_audio_write
+42010538 T speaker_setup_load
+42010598 T speaker_setup_start
+
+Physical USB, on-device NVS retention, Wi-Fi association and speaker output were not tested.

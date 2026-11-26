@@ -1,0 +1,26 @@
+{
+  "brief": {
+    "bom": [],
+    "name": "respeaker-lite",
+    "purpose": null,
+    "scenarios": [],
+    "target_users": []
+  },
+  "device": "respeaker-lite",
+  "example": "audio_meter",
+  "interfaces": [
+    "audio",
+    "led",
+    "input"
+  ],
+  "schema_version": 3,
+  "secrets": {},
+  "skills": [],
+  "target": "esp-idf/respeaker-lite",
+  "toolchain": {
+    "name": "esp-idf",
+    "source": "devices/respeaker-lite/targets/README.md",
+    "target": "esp32s3",
+    "version": "6.0.2"
+  }
+}

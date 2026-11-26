@@ -1,0 +1,6 @@
+# Copyright (c) 2026 CodeCraft AI Hardware contributors.
+# SPDX-License-Identifier: Apache-2.0
+# Exact versions retained from this example's previously verified dependency lock.
+dependencies:
+  espressif/esp_lcd_touch_ft5x06: "1.1.1"
+  espressif/esp_lcd_touch_gt911: "1.2.1"

@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "ok": true,
+  "data": {
+    "status": "passed",
+    "path": "<workspace>/replicas/parity/07-live-tv/release/link-recovery-respeaker",
+    "sha256": "c86aaef1981cb89d64209f0572c2a8b3d45d129ab7baedd6999286efe0741c0d",
+    "scope": "offline-integrity-and-layout",
+    "device_verification": "not_run"
+  }
+}

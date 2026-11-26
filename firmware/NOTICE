@@ -1,0 +1,50 @@
+CodeCraft AI Hardware
+Copyright (c) 2026 CodeCraft AI Hardware contributors
+
+This repository contains adapted third-party code and hardware references.
+The following notices describe those materials; individual source files
+retain their copyright and license declarations.
+
+- Imported hardware reference code (Apache License 2.0)
+  Copyright (c) Meta Platforms, Inc. and affiliates.
+  Used for: selected board configuration, audio and display drivers,
+  sensor protocol implementations, and the SSCMA camera client.
+
+- Seeed-Solution/SenseCAP_Indicator_ESP32 (Apache License 2.0)
+  https://github.com/Seeed-Solution/SenseCAP_Indicator_ESP32
+  Used for: SenseCAP Indicator pin map, TCA9535 expander assignments, and
+  the ST7701S register init sequence (transcribed as a data table in
+  devices/sensecap-indicator/targets/bsp/src/bsp_display.c).
+
+- Seeed Studio vendor repositories (see docs/vendor-sources.md for the
+  per-board authoritative source and its license).
+
+- SSD1677 reference driver, epd_ssd1677.c (MIT License,
+  Copyright (c) 2026 JoJang2u, limengdu)
+  Used for: the reTerminal Sticky SSD1677 panel driver ported as
+  devices/reterminal-sticky/targets/bsp/src/bsp_epd.c (protocol, refresh
+  sequences, portrait transpose). The file retains its MIT header.
+
+- Seeed-Studio/Seeed_GFX2 (MIT License)
+  https://github.com/Seeed-Studio/Seeed_GFX2
+  Used for: the JD9853A register initialization sequence in
+  devices/xiao-s3-147/targets/bsp/src/bsp_display.c and the AXS5106L touch
+  facts in the board's bsp_pins.h.
+
+All derived files retain their original copyright headers.
+
+CodeCraft Gadgets Cloud Agent Skills were imported from the user-provided
+codecraft-gadgets-cloud checkout. The source commit, uncommitted snapshot
+file hashes and local adaptations are recorded in tools/skill_packages/import.json.
+The supplied checkout contained no separate upstream license file.
+
+Normalized reference source labels and inspected file hashes are documented
+in docs/source-provenance.md and docs/reference-snapshot.json.
+
+- Seeed-Studio/recamera-pro-ext-api (Apache-2.0; native client declarations BSD-3-Clause)
+  https://github.com/Seeed-Studio/recamera-pro-ext-api
+  SDK revision: 635ffc3c51d596dd2e8139f297798162e6be62b9.
+  Used by skills/codecraft-development-recamera-pysdk for offline application
+  packaging, API reference snapshots and SDK contract checks. Original import
+  provenance is in docs/recamera-skill-import.json; the installed Skill carries
+  the Apache license and original native-client notice and license.

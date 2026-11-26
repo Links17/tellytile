@@ -1,0 +1,155 @@
+{
+  "build_receipt_sha256": "e7fec4b9830fb5020ddfcdcb94931a01c34b95539bfbf549c5a6bf872d64914a",
+  "device_verification": "not_run",
+  "example": "button_backlight",
+  "format": "bin",
+  "image": {
+    "file": "firmware.bin",
+    "sha256": "ef2862c36aed6ffaacefb2d4352aa97a9f4f238fdf3d623d9689fe7e4cc10b73",
+    "size": 1455072
+  },
+  "kind": "firmware-release",
+  "layout": {
+    "address_space": "flash",
+    "base_address": 0,
+    "chip": "esp32s3",
+    "fill": 255,
+    "flash_capacity": 8388608,
+    "flash_settings": {
+      "flash_freq": "80m",
+      "flash_mode": "dio",
+      "flash_size": "8MB"
+    },
+    "format": "bin",
+    "metadata": [
+      {
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/flasher_args.json",
+        "sha256": "bb24c06dce9e333411fe6912818a640fd943e1fe7bee29a8249d288725f923c5",
+        "size": 923
+      },
+      {
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/config/sdkconfig.json",
+        "sha256": "0bdb47d3f589ee917362585a665993c5b90a15df3752fd139d3a2b6db9b51724",
+        "size": 49577
+      },
+      {
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/project_description.json",
+        "sha256": "2258d99357143aa0b71b90b5d0e6ec5667002ecb2c8cd7ee0017cd02dddcbd4e",
+        "size": 212511
+      },
+      {
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/CMakeCache.txt",
+        "sha256": "95ddf4b237bef68d87adeb667ca74db878f52c626982b7967dd34ffe7e587c4a",
+        "size": 31240
+      },
+      {
+        "path": "devices/sensecap-indicator/targets/examples/button_backlight/sdkconfig",
+        "sha256": "238b1f9d3bbe108d09b68f5cd95e3727f1cdc1ea89af24e514c93cff740af765",
+        "size": 77296
+      }
+    ],
+    "partition_table_offset": 32768,
+    "partitions": [
+      {
+        "name": "nvs",
+        "offset": 36864,
+        "size": 24576,
+        "subtype": 2,
+        "type": 1
+      },
+      {
+        "name": "phy_init",
+        "offset": 61440,
+        "size": 4096,
+        "subtype": 1,
+        "type": 1
+      },
+      {
+        "name": "factory",
+        "offset": 65536,
+        "size": 1536000,
+        "subtype": 0,
+        "type": 0
+      }
+    ],
+    "physical_flash": {
+      "bytes": 8388608,
+      "source": {
+        "path": "devices/sensecap-indicator/AGENTS.md",
+        "template": "{value} MB flash"
+      },
+      "status": "documented"
+    },
+    "purpose": "factory",
+    "schema_version": 1,
+    "segments": [
+      {
+        "offset": 0,
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/bootloader/bootloader.bin",
+        "role": "bootloader",
+        "sha256": "a095cdf5c60b6d66cbe19b8ae4302f278551154cddff75c591cbcb87f87885a9",
+        "size": 22496
+      },
+      {
+        "offset": 32768,
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/partition_table/partition-table.bin",
+        "role": "partition-table",
+        "sha256": "5295e8c42d6fb5f95e4e8a185932c6191d27cfc5078322475347e40e71af815a",
+        "size": 3072
+      },
+      {
+        "offset": 65536,
+        "path": ".codecraft/builds/sensecap-indicator/button_backlight/gx/button_backlight.bin",
+        "role": "app",
+        "sha256": "9e8e8d18082a83a0768d3bf143afd80f13a689e9e30f532b3f0c14618f123d9a",
+        "size": 1389536
+      }
+    ],
+    "tools": {
+      "esptool_sha256": "1772a0af0c2aa08b07c89c6cf3719d4217901d5351ab6befa1eae8cd025e1166",
+      "esptool_version": "5.7.0",
+      "partition_tool_sha256": "02f6c1c5f012393d47987ee64bc50ba319a2eda48cbcec754d8cfaf780cce529",
+      "python": "3.13.2"
+    },
+    "write_range": {
+      "end": 1455072,
+      "start": 0
+    }
+  },
+  "lock_sha256": "f420956c7b95b05c76a530b478f87cdce09d992e760f385495c3aa4eedf50dec",
+  "plan_sha256": "ed5ff15cfa8a192ff055eec55f015b44786b1b8af52a2baa3462a0be73659a36",
+  "purpose": "factory",
+  "regions": [
+    {
+      "offset": 0,
+      "role": "bootloader",
+      "sha256": "a095cdf5c60b6d66cbe19b8ae4302f278551154cddff75c591cbcb87f87885a9",
+      "size": 22496
+    },
+    {
+      "offset": 32768,
+      "role": "partition-table",
+      "sha256": "5295e8c42d6fb5f95e4e8a185932c6191d27cfc5078322475347e40e71af815a",
+      "size": 3072
+    },
+    {
+      "offset": 65536,
+      "role": "app",
+      "sha256": "9e8e8d18082a83a0768d3bf143afd80f13a689e9e30f532b3f0c14618f123d9a",
+      "size": 1389536
+    }
+  ],
+  "schema_version": 1,
+  "source_digest": "731d7387a144cc22bf6087f6f7b2ec22f4e3c0b701b7a2a82d7a53b1504f8d68",
+  "target": "esp-idf/sensecap-indicator",
+  "toolchain": {
+    "compiler": "xtensa-esp-elf-gcc (crosstool-NG esp-15.2.0_20251204) 15.2.0",
+    "python": "3.13.2",
+    "sdk_changes_sha256": "e41f48fb348f5fb3c0629461979a2c46b1195ddef6030c758026a955a92068fc",
+    "sdk_commit": "7101770dc6db2667b3c477cc31365dd1acd6db4e",
+    "sdk_submodules": "24c60e243580c7868f4334a1ba3123481fe1aa48 components/bootloader/subproject/components/micro-ecc/micro-ecc (v1.1)\n b4b7c54b1eab6a844789b69e56322ef5736eddc8 components/bt/controller/lib_esp32 (b4b7c54)\n 6a5c0b8bfca1a2e984e89431b8ebf9b521dad5ea components/bt/controller/lib_esp32c2/esp32c2-bt-lib (heads/main)\n 0a08c4b32f3666003080b662a1a61794da24ff0f components/bt/controller/lib_esp32c3_family (heads/master)\n c328228f53fe167cc9fbd05b5bef37158f64956d components/bt/controller/lib_esp32c5/esp32c5-bt-lib (c328228)\n e7be018522c85e67c298effc8ffa7f5b84887a7b components/bt/controller/lib_esp32c6/esp32c6-bt-lib (e7be018)\n b2b8fd009c31816497d55726af297761147beb07 components/bt/controller/lib_esp32h2/esp32h2-bt-lib (b2b8fd0)\n e44762384ed104a0ebc78f134eeba5f3ab648ddc components/bt/esp_ble_mesh/lib/lib (e447623)\n 5d8b70207a6324f45d9f548ff57ec3b154afccdd components/bt/host/nimble/nimble (nimble_1_6_0_tag-428-g5d8b7020)\n eeecc49ce8af123cf8ad40efdb9673e37b56230f components/cmock/CMock (v2.5.2-2-geeecc49)\n 71b47be7c950f1bf5f7e5303779fa99a16224bb6 components/cmock/CMock/vendor/c_exception (71b47be)\n cf949f45ca6d172a177b00da21310607b97bc7a7 components/cmock/CMock/vendor/unity (cf949f4)\n 79e618f033e926d134decc6d95bb1b1850bd032c components/esp_coex/lib (79e618f)\n 59c1234e929212aec0fdda75769b759951235536 components/esp_phy/lib (59c1234)\n bb69e7e609c9a9a909ddd1ed175f36df2bd13801 components/esp_wifi/lib (bb69e7e)\n 2867f6883a12920b1969ff9624c0ab0e4185c2ce components/heap/tlsf (2867f68)\n fd432e4ee2cfb7f7f1c7eb7227e0173412e7b84e components/lwip/lwip (fd432e4)\n 6cc42afad309e861f4c07e6f106e2ab14a9cb8e5 components/mbedtls/mbedtls (6cc42af)\n 9467fb320782855dff84add294039bfa0bcbbf4b components/openthread/lib (9467fb3)\n a98813b30ae58f9a95ece680b9cc46c3874de6ea components/openthread/openthread (a98813b)\n e185d7fd85499c8ce5ca2a54f5cf8fe7dbe3f8df components/openthread/openthread/third_party/mbedtls/repo (e185d7f)\n 457996474728cb8e968ed21953b72f74d2f536b2 components/openthread/openthread/third_party/mbedtls/repo/framework (4579964)\n abc67a11c6db271bedbb9f58be85d6f4e2ea8389 components/protobuf-c/protobuf-c (abc67a1)\n ad902cadceb39d0825a97e25ecb5867641f606ba components/spiffs/spiffs (ad902ca)\n bf560290f6020737eafaa8b5cbd2177c3956c03f components/unity/unity (bf56029)",
+    "status": "passed",
+    "version": "ESP-IDF v6.0.2-dirty"
+  },
+  "variant": "gx"
+}

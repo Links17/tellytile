@@ -1,0 +1,9 @@
+Playback controls passed pause, resume and setup tap regions and labels.
+Native channel menu passed tap regions, empty and partial pages, Chinese labels and untouched video.
+Volume and brightness touch controls, 10% bounds, relay acknowledgements and stale revision checks passed.
+Status bar passed RSSI thresholds, displayed-FPS and ingress sampling, counter wrap, reset, USB power label and band boundaries.
+Quality cards, saved profile decoding, exact session geometry, FPS limits and legacy CONFIG passed.
+Channel recovery kept a proven channel and reset offline failures; unproven channels advanced after three automatic or five deliberate attempts.
+Playback gestures passed: directional wrap, tap, interrupted and diagonal contact, modal isolation, and list-page retention.
+Setup edits kept matched credentials, rejected stale identities, accepted explicit clearing and excluded secrets from saved metadata.
+Session setup refreshed each managed connection, replaced the endpoint and ticket together, and waited for durable enrollment.

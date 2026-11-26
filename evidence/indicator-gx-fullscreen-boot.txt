@@ -1,0 +1,7 @@
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (325) boot: Loaded app from partition at offset 0x10000
+I (852) bsp_display: RP2040 held in reset
+I (1352) bsp_display: 480x480 RGB panel ready (GX build profile)
+I (1772) bsp_touch: touch ready: FT6336U @0x48 (480x480)
+I (5832) esp_netif_handlers: sta ip: <indicator>, mask: 255.255.255.0, gw: 192.168.117.1
+I (6232) passport_tv: Channel dw-live / ultra (3 channels)

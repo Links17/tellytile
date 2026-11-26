@@ -1,0 +1,5 @@
+Original service: enrollment and refresh passed, unrelated credential rejected.
+fixture / smooth: decoded 2 full frames and 19 audio blocks; channel names matched
+demo / standard: decoded 2 full frames and 17 audio blocks; channel names matched
+fixture / ultra: decoded 2 full frames and 17 audio blocks; channel names matched
+Original FAV1 session 3976977070 recovered after 18 snow frames and silent audio blocks, then resumed colour and sound.

@@ -1,0 +1,235 @@
+{
+  "dependencies": [],
+  "device": "respeaker-lite",
+  "example_dependencies": {
+    "audio_meter": [
+      "devices/respeaker-lite/targets/examples/audio_meter/dependencies.lock",
+      "devices/respeaker-lite/targets/examples/audio_meter/main/idf_component.yml"
+    ]
+  },
+  "example_inputs": {
+    "audio_meter": [
+      "devices/respeaker-lite/targets/examples/audio_meter",
+      "devices/respeaker-lite/targets/bsp/include/bsp_audio.h",
+      "devices/respeaker-lite/targets/bsp/include/bsp_led.h",
+      "devices/respeaker-lite/targets/bsp/src/bsp_audio.c",
+      "devices/respeaker-lite/targets/bsp/src/bsp_led.c",
+      "devices/respeaker-lite/targets/bsp/include/bsp_button.h",
+      "devices/respeaker-lite/targets/bsp/src/bsp_button.c"
+    ]
+  },
+  "examples": [
+    "audio_meter"
+  ],
+  "firmware": {
+    "formats": [
+      "bin"
+    ],
+    "purpose": "factory",
+    "security": "unsigned-unencrypted"
+  },
+  "id": "esp-idf/respeaker-lite",
+  "inputs": [
+    "devices/respeaker-lite/targets/bsp/CMakeLists.txt",
+    "devices/respeaker-lite/targets/bsp/idf_component.yml",
+    "devices/respeaker-lite/targets/bsp/include/bsp_pins.h",
+    "devices/respeaker-lite/targets/README.md",
+    "devices/respeaker-lite/targets/README.zh_CN.md"
+  ],
+  "interfaces": [
+    {
+      "configuration": {
+        "channels": {
+          "description": "PCM channels",
+          "maximum": 32,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "channel",
+          "value": null
+        },
+        "sample_bits": {
+          "description": "PCM container width",
+          "maximum": 64,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "bit",
+          "value": null
+        },
+        "sample_rate_hz": {
+          "description": "PCM sample rate",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "Hz",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "audio_meter": [
+          "devices/respeaker-lite/targets/bsp/include/bsp_audio.h"
+        ]
+      },
+      "id": "audio",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "capture": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/respeaker-lite/targets/bsp/include/bsp_audio.h",
+          "supported": true,
+          "symbol": "bsp_audio_mic_read"
+        },
+        "playback": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/respeaker-lite/targets/bsp/include/bsp_audio.h",
+          "supported": true,
+          "symbol": "bsp_audio_write"
+        },
+        "tone": {
+          "reason": "No native implementation for this semantic operation is registered.",
+          "supported": false
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    },
+    {
+      "configuration": {
+        "channels": {
+          "description": "Independently controlled color channels",
+          "maximum": 4,
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "channel",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "audio_meter": [
+          "devices/respeaker-lite/targets/bsp/include/bsp_led.h"
+        ]
+      },
+      "id": "led",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "write": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/respeaker-lite/targets/bsp/include/bsp_led.h",
+          "supported": true,
+          "symbol": "bsp_led_set_rgb"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    },
+    {
+      "configuration": {
+        "debounce_ms": {
+          "description": "Native debounce interval",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "ms",
+          "value": null
+        }
+      },
+      "example_implementation": {
+        "audio_meter": [
+          "devices/respeaker-lite/targets/bsp/include/bsp_button.h"
+        ]
+      },
+      "id": "input",
+      "implementation": [],
+      "limitations": [
+        "Physical behavior and resource bounds require device evidence. See the Device reference for hardware prerequisites and the supported interface scope."
+      ],
+      "operations": {
+        "read": {
+          "reason": "Native API semantics and lifetime are defined in the cited implementation.",
+          "source": "devices/respeaker-lite/targets/bsp/include/bsp_button.h",
+          "supported": true,
+          "symbol": "bsp_button_pressed"
+        }
+      },
+      "resources": {
+        "peak_memory_bytes": {
+          "description": "Upper bound on peak implementation working memory; unknown without measurement",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        },
+        "persistent_storage_bytes": {
+          "description": "Upper bound on implementation persistent storage footprint",
+          "minimum": 0,
+          "reason": "No source-backed bound or measurement is registered; do not infer a default.",
+          "status": "unknown",
+          "type": "integer",
+          "unit": "byte",
+          "value": null
+        }
+      }
+    }
+  ],
+  "path": "devices/respeaker-lite/targets",
+  "platform": "esp-idf",
+  "schema_version": 3,
+  "toolchain": {
+    "name": "esp-idf",
+    "source": "devices/respeaker-lite/targets/README.md",
+    "target": "esp32s3",
+    "version": "6.0.2"
+  },
+  "variants": {}
+}

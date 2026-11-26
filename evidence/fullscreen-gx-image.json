@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "ok": true,
+  "data": {
+    "status": "passed",
+    "path": "<workspace>/replicas/parity/04-passport-tv/release-fullscreen-gx",
+    "sha256": "ef2862c36aed6ffaacefb2d4352aa97a9f4f238fdf3d623d9689fe7e4cc10b73",
+    "scope": "offline-integrity-and-layout",
+    "device_verification": "not_run"
+  }
+}

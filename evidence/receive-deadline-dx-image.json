@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "ok": true,
+  "data": {
+    "status": "passed",
+    "path": "<workspace>/replicas/parity/04-passport-tv/release-receive-deadline-dx",
+    "sha256": "56f5aa19a3b4c9664f6365a9d6e8f28c8270b2ef8982a08e6efb83e88afb6bef",
+    "scope": "offline-integrity-and-layout",
+    "device_verification": "not_run"
+  }
+}

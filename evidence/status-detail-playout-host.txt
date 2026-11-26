@@ -1,0 +1,7 @@
+Both relay owners invalidate the old socket when Wi-Fi disconnects and rejoins between polls.
+Shared relay timing passed video-only pacing, lost first audio packet, invalid/reordered probes, bounded smoothing and receiver re-anchor.
+Reconnect view passed 4 fps pacing, 2x2 black/white snow, label, stale-frame rejection, first-frame recovery and deliberate pause.
+Native relay datagram validity and exact stereo PCM conversion passed.
+Audio playout passed reorder, loss, late drop, idle recovery, cancel, tail drain, and session turnover.
+USB setup passed split commands, invalid input, NVS round trip, atomic update failure and reboot order.
+USB host tool passed framing, bounds, acknowledgement and single-write failure handling.

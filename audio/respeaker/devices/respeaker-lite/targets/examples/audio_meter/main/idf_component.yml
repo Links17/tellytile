@@ -1,0 +1,5 @@
+# Copyright (c) 2026 CodeCraft AI Hardware contributors.
+# SPDX-License-Identifier: Apache-2.0
+# Exact versions retained from this example's previously verified dependency lock.
+dependencies:
+  espressif/led_strip: "3.1.1"

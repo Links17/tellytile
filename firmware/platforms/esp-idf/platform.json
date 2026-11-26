@@ -1,0 +1,69 @@
+{
+  "adapter": "platforms/esp-idf/adapter.py",
+  "ci": {
+    "runner": "ubuntu-latest"
+  },
+  "id": "esp-idf",
+  "operations": {
+    "build": {
+      "reason": "Implemented by the repository CLI and this platform adapter.",
+      "supported": true
+    },
+    "configure": {
+      "reason": "Configuration remains native to the software stack; project generation preserves its configuration files.",
+      "supported": false
+    },
+    "device-test": {
+      "reason": "Physical observations require an operator; record evidence with the repository evidence command.",
+      "supported": false
+    },
+    "firmware-merge": {
+      "reason": "Native unsigned, unencrypted ESP-IDF factory BIN images with build provenance.",
+      "supported": true
+    },
+    "firmware-plan": {
+      "reason": "Native unsigned, unencrypted ESP-IDF factory BIN images with build provenance.",
+      "supported": true
+    },
+    "firmware-verify": {
+      "reason": "Native unsigned, unencrypted ESP-IDF factory BIN images with build provenance.",
+      "supported": true
+    },
+    "flash": {
+      "reason": "Deployment is an explicitly authorized workflow in codecraft-development-device-test, not an automatic validation operation.",
+      "supported": false
+    },
+    "generate": {
+      "reason": "Implemented by the repository CLI and this platform adapter.",
+      "supported": true
+    },
+    "host-test": {
+      "reason": "Implemented by the repository CLI and this platform adapter.",
+      "supported": true
+    },
+    "inspect": {
+      "reason": "Implemented by the repository CLI and this platform adapter.",
+      "supported": true
+    },
+    "logs": {
+      "reason": "Use the platform native monitor after selecting the actual device; no generic device connection is configured.",
+      "supported": false
+    },
+    "package": {
+      "reason": "Implemented by the repository CLI and this platform adapter.",
+      "supported": true
+    },
+    "simulate": {
+      "reason": "No simulator is registered for this platform. Simulation cannot substitute for physical evidence.",
+      "supported": false
+    }
+  },
+  "runtime": [
+    "tools/codecraft/resource.json",
+    "platforms/esp-idf/composition.py",
+    "platforms/esp-idf/cmake/bsp.cmake",
+    "platforms/esp-idf/variants.py",
+    "platforms/esp-idf/esp_firmware.py"
+  ],
+  "schema_version": 2
+}

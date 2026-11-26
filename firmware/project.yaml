@@ -1,0 +1,28 @@
+{
+  "brief": {
+    "bom": [],
+    "name": "sensecap-indicator",
+    "purpose": null,
+    "scenarios": [],
+    "target_users": []
+  },
+  "device": "sensecap-indicator",
+  "example": "button_backlight",
+  "interfaces": [
+    "display",
+    "gpio",
+    "input"
+  ],
+  "physical_compatibility": "unknown",
+  "schema_version": 3,
+  "secrets": {},
+  "skills": [],
+  "target": "esp-idf/sensecap-indicator",
+  "toolchain": {
+    "name": "esp-idf",
+    "source": "devices/sensecap-indicator/targets/README.md",
+    "target": "esp32s3",
+    "version": "6.0.2"
+  },
+  "variant": "gx"
+}
