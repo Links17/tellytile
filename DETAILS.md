@@ -61,7 +61,7 @@ With the original server's Python dependencies active, run `sh tests/check_nativ
 | Assembly | Firmware and evidence |
 | --- | --- |
 | Indicator GX | [Firmware](release-fullscreen-gx/firmware.bin) · [Build](evidence/fullscreen-gx-build.json) · [Image verification](evidence/fullscreen-gx-image.json) |
-| Indicator DX | [Firmware](release-receive-deadline-dx/firmware.bin) · [Locked source archive](folotv-dx-receive-deadline-source.zip) · [Build](evidence/receive-deadline-dx-build.json) · [Image verification](evidence/receive-deadline-dx-image.json) |
+| Indicator DX | [Firmware](release-receive-deadline-dx/firmware.bin) · [Locked source archive](tellytile-dx-source.zip) · [Build](evidence/receive-deadline-dx-build.json) · [Image verification](evidence/receive-deadline-dx-image.json) |
 | reSpeaker Lite TV audio receiver | [Firmware](audio/release/link-recovery-respeaker/firmware.bin) · [Image verification](audio/evidence/link-recovery-image.json) |
 
 Both panel builds use the same streaming protocol. Their build records verify the respective native display configurations. [Panel source record](firmware/devices/sensecap-indicator/AGENTS.md#display-assembly-provenance) · [Channel recovery and playout checks](evidence/channel-caption-host.txt) · [Original service profile checks](evidence/profile-upstream.txt)
