@@ -29,7 +29,3 @@ Want to see how the display and touch support work or port TellyTile to another 
 Looking for more projects to try on your device? Browse by hardware in the [CodeCraft Hub application gallery](https://codecraft.seeed.cc/hub/application).
 
 [Setup and development notes](DETAILS.md) · [MIT License](LICENSE) · [Software sources and third-party notices](UPSTREAM.md)
-
-**Topics**
-
-`esp32` · `esp32-s3` · `sensecap-indicator` · `seeedstudio` · `desktop-tv` · `live-streaming` · `touchscreen` · `open-source-hardware` · `codecraft`

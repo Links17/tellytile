@@ -29,7 +29,3 @@ GX 实机已验证全屏直播和轻点呼出控件。封面为效果图。 [GX 
 想在手头的设备上试更多项目？可以按硬件型号筛选。 [CodeCraft Hub 应用广场](https://codecraft.seeed.cc/hub/application)
 
 [设置与开发说明](DETAILS.md) · [MIT 许可证](LICENSE) · [软件来源与第三方许可](UPSTREAM.md)
-
-**标签**
-
-`esp32` · `esp32-s3` · `sensecap-indicator` · `seeedstudio` · `desktop-tv` · `live-streaming` · `touchscreen` · `open-source-hardware` · `codecraft`
