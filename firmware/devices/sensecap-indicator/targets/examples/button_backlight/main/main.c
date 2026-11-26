@@ -617,7 +617,8 @@ static void poll_touch(void *arg)
         uint8_t count = 0;
         esp_err_t err = esp_lcd_touch_read_data(touch);
         if (err == ESP_OK) err = esp_lcd_touch_get_data(touch, points, &count, 2);
-        const bool valid = err == ESP_OK && count <= 1;
+        const bool valid = err == ESP_OK && count <= 1 &&
+            (!count || (points[0].x < BSP_LCD_H_RES && points[0].y < BSP_LCD_V_RES));
         if (valid && count && !tracker.pressed) started_us = esp_timer_get_time();
         tv_touch_event_t event;
         if (tv_touch_sample(&tracker, valid, count != 0, points[0].x, points[0].y, &event)) {
@@ -814,10 +815,11 @@ static void configure_backlight(void)
 
 static void set_brightness(unsigned level)
 {
+    ESP_ERROR_CHECK(ledc_set_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, level * 255 / 100));
+    ESP_ERROR_CHECK(ledc_update_duty(LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0));
     brightness = level;
-    ESP_ERROR_CHECK(ledc_set_duty_and_update(
-        LEDC_LOW_SPEED_MODE, LEDC_CHANNEL_0, brightness * 255 / 100, 0));
     save_controls_due = esp_timer_get_time() + 700000;
+    ESP_LOGI(TAG, "Backlight brightness %u%%", brightness);
 }
 
 static void adjust_brightness(void)

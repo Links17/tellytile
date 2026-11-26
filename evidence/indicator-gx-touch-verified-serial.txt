@@ -1,0 +1,22 @@
+rst:0x1 (POWERON),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (325) boot: Loaded app from partition at offset 0x10000
+E (903) i2c.master: I2C transaction timeout detected
+E (903) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up
+E (963) i2c.master: I2C transaction timeout detected
+E (963) i2c.master: probe device timeout. Please check if xfer_timeout_ms and pull-ups are correctly set up
+E (963) bsp_io_expander: bsp_io_expander_init(70): TCA9535 not found
+E (963) bsp_display: bsp_display_init(252): io expander
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (329) boot: Loaded app from partition at offset 0x10000
+I (1377) bsp_display: 480x480 RGB panel ready (GX build profile)
+I (1797) bsp_touch: touch ready: FT6336U @0x48 (480x480), rotate_180=1
+I (9067) passport_tv: Channel dw-live / ultra (3 channels)
+I (63867) passport_tv: Backlight brightness 70%
+I (64937) passport_tv: Backlight brightness 80%
+I (65237) passport_tv: Backlight brightness 90%
+I (65377) passport_tv: Backlight brightness 100%
+I (66417) passport_tv: Backlight brightness 90%
+I (69217) passport_tv: Channel fixture / ultra (3 channels)
+rst:0xc (RTC_SW_CPU_RST),boot:0x8 (SPI_FAST_FLASH_BOOT)
+I (329) boot: Loaded app from partition at offset 0x10000
+I (1377) bsp_display: 480x480 RGB panel ready (GX build profile)

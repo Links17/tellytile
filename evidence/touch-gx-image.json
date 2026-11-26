@@ -1,0 +1,11 @@
+{
+  "schema_version": 2,
+  "ok": true,
+  "data": {
+    "status": "passed",
+    "path": "<workspace>/release-touch-gx",
+    "sha256": "b79d828787d6b0cc0d191f0fae2f2a465ca3635a170b3378ae642ba0124b2f2b",
+    "scope": "offline-integrity-and-layout",
+    "device_verification": "not_run"
+  }
+}

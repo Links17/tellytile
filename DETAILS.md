@@ -60,7 +60,7 @@ With the original server's Python dependencies active, run `sh tests/check_nativ
 
 | Assembly | Firmware and evidence |
 | --- | --- |
-| Indicator GX | [Firmware](release-fullscreen-gx/firmware.bin) · [Build](evidence/fullscreen-gx-build.json) · [Image verification](evidence/fullscreen-gx-image.json) |
+| Indicator GX | [Firmware](release-touch-gx/firmware.bin) · [Build](evidence/touch-gx-build.json) · [Image verification](evidence/touch-gx-image.json) |
 | Indicator DX | [Firmware](release-receive-deadline-dx/firmware.bin) · [Locked source archive](tellytile-dx-source.zip) · [Build](evidence/receive-deadline-dx-build.json) · [Image verification](evidence/receive-deadline-dx-image.json) |
 | reSpeaker Lite TV audio receiver | [Firmware](audio/release/link-recovery-respeaker/firmware.bin) · [Image verification](audio/evidence/link-recovery-image.json) |
 

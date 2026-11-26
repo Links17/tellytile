@@ -16,7 +16,7 @@ TellyTile 把 Seeed Studio SenseCAP Indicator 变成一台 4 英寸 Wi-Fi 桌面
 
 准备一台 **SenseCAP Indicator**、USB 电源、供设备连接的 **2.4 GHz Wi-Fi**，以及同一局域网内用来运行视频服务的电脑。
 
-1. **选对屏幕版本并烧录。** GX 版提供这里展示的全屏体验，DX 版沿用原来的布局。板型不确定时，先查屏幕版本。 [GX 固件](release-fullscreen-gx/firmware.bin) · [DX 固件](release-receive-deadline-dx/firmware.bin) · [板型与设置说明](DETAILS.md)
+1. **选对屏幕版本并烧录。** GX 版提供这里展示的全屏体验，DX 版沿用原来的布局。板型不确定时，先查屏幕版本。 [GX 固件](release-touch-gx/firmware.bin) · [DX 固件](release-receive-deadline-dx/firmware.bin) · [板型与设置说明](DETAILS.md)
 2. **在电脑上启动视频服务**，添加你想看的视频源，记下服务的局域网地址和配对码。 [视频服务启动说明](https://github.com/guolifu/ai-passport-tv/blob/30ba309d5fe77e86154de3ca1b81d457b65bc36f/README.zh_CN.md#3-一键启动-tv-服务)
 3. **连接屏幕上显示的 `TV-SETUP` 热点**，打开[设备配网页](http://192.168.4.1)，填入 Wi-Fi、视频服务地址和配对码，保存重启。
 

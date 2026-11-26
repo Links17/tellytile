@@ -16,7 +16,7 @@ TellyTile turns a Seeed Studio SenseCAP Indicator into a 4-inch Wi-Fi desktop TV
 
 You'll need a **SenseCAP Indicator**, USB power, a **2.4 GHz Wi-Fi** network for the device, and a computer on the same local network to run the streaming service.
 
-1. **Choose and flash the firmware for your screen.** The GX build has the fullscreen experience shown here. The DX build uses its earlier layout. Check your panel if you're unsure which to choose. [GX firmware](release-fullscreen-gx/firmware.bin) · [DX firmware](release-receive-deadline-dx/firmware.bin) · [Panel and setup notes](DETAILS.md)
+1. **Choose and flash the firmware for your screen.** The GX build has the fullscreen experience shown here. The DX build uses its earlier layout. Check your panel if you're unsure which to choose. [GX firmware](release-touch-gx/firmware.bin) · [DX firmware](release-receive-deadline-dx/firmware.bin) · [Panel and setup notes](DETAILS.md)
 2. **Start the streaming service** on a computer and add a video source you want to watch. Keep its local address and pairing code handy. [Streaming service setup](https://github.com/guolifu/ai-passport-tv/blob/30ba309d5fe77e86154de3ca1b81d457b65bc36f/README.md#3-start-the-service)
 3. **Connect to the `TV-SETUP` hotspot** shown on the Indicator. Open [the device setup page](http://192.168.4.1), enter your Wi-Fi, the streaming service address and its pairing code, then save and restart.
 

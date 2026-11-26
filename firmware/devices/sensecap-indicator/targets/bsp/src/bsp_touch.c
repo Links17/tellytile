@@ -83,13 +83,16 @@ esp_err_t bsp_touch_init(esp_lcd_touch_handle_t *out_handle)
 
     esp_lcd_touch_handle_t touch = NULL;
     esp_err_t ret;
+    /* The tested GX FT6336U coordinates are rotated 180 degrees relative
+     * to the display. The native driver reflects about each last pixel. */
+    const bool rotate_touch = CODECRAFT_DISPLAY_GX && !found->goodix;
     const esp_lcd_touch_config_t tp_cfg = {
-        .x_max = BSP_LCD_H_RES,
-        .y_max = BSP_LCD_V_RES,
+        .x_max = rotate_touch ? BSP_LCD_H_RES - 1 : BSP_LCD_H_RES,
+        .y_max = rotate_touch ? BSP_LCD_V_RES - 1 : BSP_LCD_V_RES,
         .rst_gpio_num = GPIO_NUM_NC, /* lives on the IO expander */
         .int_gpio_num = GPIO_NUM_NC, /* not wired; poll instead */
         .levels = { .reset = 0, .interrupt = 0 },
-        .flags = { .swap_xy = 0, .mirror_x = 0, .mirror_y = 0 },
+        .flags = { .swap_xy = 0, .mirror_x = rotate_touch, .mirror_y = rotate_touch },
     };
 
     if (!found->goodix) {
@@ -117,9 +120,9 @@ esp_err_t bsp_touch_init(esp_lcd_touch_handle_t *out_handle)
     if (out_handle) {
         *out_handle = s_touch;
     }
-    ESP_LOGI(TAG, "touch ready: %s @0x%02x (%dx%d)",
+    ESP_LOGI(TAG, "touch ready: %s @0x%02x (%dx%d), rotate_180=%u",
              found->goodix ? "GT911" : "FT6336U", found->addr,
-             BSP_LCD_H_RES, BSP_LCD_V_RES);
+             BSP_LCD_H_RES, BSP_LCD_V_RES, (unsigned)rotate_touch);
     return ESP_OK;
 }
 
